@@ -4,10 +4,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moja druga spletna stran</title>
+  <meta name="theme-color" content="#f8f4ec">
+  <meta name="description" content="Vino Muhič – penine, degustacije in nepozabna doživetja. Za informacije smo vam z veseljem na voljo.">
+  <title>Vino Muhič | Penine in degustacije</title>
+
+  <style>
+    :root {
+      --cream: #f8f4ec;
+      --gold: #a48750;
+      --gold-light: #c5ab78;
+      --text: #40372d;
+      --muted: #716659;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--cream);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 760px;
+      text-align: center;
+      border: 1px solid #dfd2bb;
+      padding: 52px 44px;
+      position: relative;
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 1px solid #e8dfd0;
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 64px);
+      font-weight: normal;
+      letter-spacing: 1px;
+      margin: 16px 0 24px;
+    }
+
+    .ornament {
+      width: 100px;
+      height: 1px;
+      background: var(--gold-light);
+      margin: 0 auto 30px;
+    }
+
+    h2 {
+      font-size: clamp(27px, 5vw, 38px);
+      line-height: 1.25;
+      font-weight: normal;
+      margin: 0 0 20px;
+    }
+
+    .intro {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.9;
+      color: var(--muted);
+      max-width: 510px;
+      margin: 0 auto;
+    }
+
+    .contact {
+      margin: 34px auto 0;
+      max-width: 360px;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .button {
+      display: block;
+      padding: 15px 20px;
+      margin-top: 12px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.2s, color 0.2s;
+      overflow-wrap: anywhere;
+    }
+
+    .button.primary {
+      background: var(--gold);
+      color: white;
+    }
+
+    .button:hover {
+      background: #80683d;
+      border-color: #80683d;
+      color: white;
+    }
+
+    footer {
+      margin-top: 32px;
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 42px 22px;
+      }
+
+      .eyebrow {
+        letter-spacing: 2px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Dobrodošli na moji novi spletni strani!</h1>
-  <p>Moja druga spletna stran je uspešno ustvarjena.</p>
+  <main class="page">
+    <div class="eyebrow">PENINE · DEGUSTACIJE · DOŽIVETJA</div>
+
+    <h1>Vino Muhič</h1>
+
+    <div class="ornament"></div>
+
+    <h2>Nekaj lepega se pripravlja …</h2>
+
+    <p class="intro">
+      Naša spletna stran je trenutno v izdelavi.
+      <br><br>
+      Z ljubeznijo do penin ustvarjamo nepozabna
+      doživetja, degustacije in trenutke,
+      ki jih je vredno deliti.
+      <br><br>
+      Za vse informacije smo vam z veseljem na voljo.
+    </p>
+
+    <section class="contact" aria-label="Kontakt">
+      <a class="button primary" href="tel:+38640900952">
+        Pokličite nas<br>
+        +386 40 900 952
+      </a>
+
+      <a class="button" href="mailto:info@vinamuhic.si">
+        Pišite nam<br>
+        info@vinamuhic.si
+      </a>
+    </section>
+
+    <footer>Veselimo se vašega povpraševanja.</footer>
+  </main>
 </body>
 </html>
