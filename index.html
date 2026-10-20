@@ -66,6 +66,17 @@
       margin: 16px 0 24px;
     }
 
+    .hero-image {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      height: auto;
+      margin: 0 auto 28px;
+      border: 1px solid #dfd2bb;
+      position: relative;
+      z-index: 1;
+    }
+
     .ornament {
       width: 100px;
       height: 1px;
@@ -133,12 +144,20 @@
     }
 
     @media (max-width: 520px) {
+      body {
+        padding: 16px 12px;
+      }
+
       .page {
         padding: 42px 22px;
       }
 
       .eyebrow {
         letter-spacing: 2px;
+      }
+
+      .hero-image {
+        margin-bottom: 24px;
       }
     }
   </style>
@@ -149,6 +168,12 @@
     <div class="eyebrow">PENINE · DEGUSTACIJE · DOŽIVETJA</div>
 
     <h1>Vina Muhič</h1>
+
+    <img
+      class="hero-image"
+      src="vinamuhic_penine_ai.png"
+      alt="Penine Vina Muhič: rosé, muškatna in chardonnay"
+    >
 
     <div class="ornament"></div>
 
